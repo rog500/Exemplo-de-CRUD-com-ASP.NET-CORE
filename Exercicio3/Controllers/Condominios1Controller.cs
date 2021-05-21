@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Exercicio3.Controllers
 {
-    //[Authorize]
-    
+    //[Authorize] //Atributo para autenticação de autorização da classe ou de alguma função especica como por exemplo permisao só para visualização de condominios.
+
     public class Condominios1Controller : Controller
     {
         private readonly ApplicationDbContext _context;

@@ -17,7 +17,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
+                        @if (User.Identity.IsAuthenticated) {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Condominios1" asp-action="Index">Condominio</a>
                         </li>
@@ -27,6 +29,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Moradors" asp-action="Index">Morador</a>
                         </li>
+                        }
                     </ul>
                 </div>
             </div>

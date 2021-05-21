@@ -18,8 +18,9 @@ namespace Exercicio3.Models
         [Display(Name = "Familia")]
         [Required]
         public int Id_Familia { get; set; }
-        [ForeignKey("Id_Familia")]
 
+
+        [ForeignKey("Id_Familia")]
         [Display(Name = "Familia")]
         public Familia familia { get; set; }
 
